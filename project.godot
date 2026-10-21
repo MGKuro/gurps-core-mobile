@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="GURPS-Core-Mobile"
+run/main_scene="uid://bu7t25swi8qhe"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 

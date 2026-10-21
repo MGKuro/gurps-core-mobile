@@ -1,7 +1,19 @@
 [gd_scene format=3 uid="uid://bu7t25swi8qhe"]
 
+[ext_resource type="Script" uid="uid://w774qymwnx80" path="res://Testing_Script.gd" id="1_06t4h"]
+[ext_resource type="PackedScene" uid="uid://c5pys6mjlox2p" path="res://Characters/character.tscn" id="2_7vrkn"]
+[ext_resource type="Script" uid="uid://bvqj10k3mdbc6" path="res://Resources/CharacterData.gd" id="3_fu7sn"]
+
+[sub_resource type="Resource" id="Resource_7vrkn"]
+script = ExtResource("3_fu7sn")
+metadata/_custom_type_script = "uid://bvqj10k3mdbc6"
+
 [node name="MainMenu" type="Control" unique_id=316525993]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_06t4h")
+
+[node name="Character" parent="." unique_id=996833324 instance=ExtResource("2_7vrkn")]
+character_data = SubResource("Resource_7vrkn")
