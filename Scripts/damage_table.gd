@@ -102,7 +102,7 @@ const DAMAGE_TABLE = {
 	98: {"thrust": {"dices": 10, "mod": 2}, "swing": {"dices": 12, "mod": 2}},
 	99: {"thrust": {"dices": 10, "mod": 2}, "swing": {"dices": 12, "mod": 2}},
 	100: {"thrust": {"dices": 11, "mod": 0}, "swing": {"dices": 13, "mod": 0}}
-}
+	}
 
 static func get_damage_dice(st: int, is_swing: bool = false) -> Dictionary:
 	var extra_dices: int
